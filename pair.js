@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_zoraib_Tech = Gifted_Tech({
+            let Pair_Code_By_zoraib_Tech = Zoraib_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -84,7 +84,7 @@ _Don't Forget To Give Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
+                    Zoraib_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
